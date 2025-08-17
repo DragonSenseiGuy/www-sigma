@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Download Sigma Browser</title>
+    <meta name="description" content="Download Sigma Browser for macOS. Apple Silicon (M1/M2/M3/M4) and Intel builds available.">
+    <meta name="theme-color" content="#11162b" media="(prefers-color-scheme: dark)" />
+    <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)" />
+
+    <link rel="icon" href="./assets/logo.svg" type="image/svg+xml" />
+    <link rel="preload" href="./styles/main.css" as="style" />
+    <link rel="stylesheet" href="./styles/main.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header" role="banner">
+      <nav class="navbar container" aria-label="Main">
+        <a class="brand" href="./index.html" aria-label="Sigma Browser Home">
+          <img src="./assets/logo.svg" alt="Sigma Browser" width="32" height="32" />
+          <span>Sigma Browser</span>
+        </a>
+        <button class="nav-toggle" aria-controls="nav-menu" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+        <div id="nav-menu" class="nav-links">
+          <a class="nav-link" href="./index.html">Home</a>
+          <a class="nav-link active" href="./download.html">Download</a>
+          <button id="theme-toggle" class="nav-link theme-toggle" type="button" aria-pressed="false" title="Toggle light/dark theme">🌙</button>
+          <a class="nav-link" href="https://github.com" rel="noopener noreferrer" target="_blank">GitHub</a>
+        </div>
+      </nav>
+    </header>
+
+    <main id="main" class="download-page">
+      <section class="download-hero">
+        <div class="container">
+          <h1>Download Sigma Browser</h1>
+          <p class="lead">Choose the right build for your Mac. Both installers are notarized DMG files.</p>
+        </div>
+      </section>
+
+      <section class="downloads">
+        <div class="container">
+          <div class="download-grid">
+            <article class="download-card">
+              <h2>Apple Silicon Macs</h2>
+              <p class="muted">M1, M2, M3, M4</p>
+              <a class="btn btn-primary btn-lg" href="./releases/Sigma-1.0.0-arm64.dmg" download>
+                Download Sigma-1.0.0-arm64.dmg
+              </a>
+              <p class="hint">Best performance and battery life on Apple Silicon.</p>
+            </article>
+
+            <article class="download-card">
+              <h2>Intel Macs</h2>
+              <p class="muted">x86_64</p>
+              <a class="btn btn-primary btn-lg" href="./releases/Sigma-1.0.0.dmg" download>
+                Download Sigma-1.0.0.dmg
+              </a>
+              <p class="hint">Compatible with older Intel-based Macs.</p>
+            </article>
+          </div>
+
+          <div class="sysreq">
+            <h3>System Requirements</h3>
+            <ul>
+              <li>macOS 12 Monterey or later</li>
+              <li>Apple Silicon (M1/M2/M3/M4) or Intel 64-bit CPU</li>
+              <li>150 MB of free disk space</li>
+              <li>Internet connection for initial setup</li>
+            </ul>
+          </div>
+
+          <div class="instructions">
+            <h3>Installation Instructions</h3>
+            <ol>
+              <li>Download the appropriate DMG for your Mac above.</li>
+              <li>Open the DMG file and drag Sigma Browser to the Applications folder.</li>
+              <li>Open Sigma from Applications. If macOS warns you, go to System Settings → Privacy & Security and allow it.</li>
+              <li>Optionally pin Sigma to your Dock for quick access.</li>
+            </ol>
+          </div>
+
+          <div class="help">
+            <p>Having trouble? Visit our <a href="https://github.com" target="_blank" rel="noopener">GitHub</a> for issues and updates.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>© <span id="year"></span> Sigma Browser. All rights reserved.</p>
+        <div class="footer-links">
+          <a href="./download.html">Download</a>
+          <span aria-hidden="true">•</span>
+          <a href="https://github.com" target="_blank" rel="noopener noreferrer">GitHub</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./scripts/main.js" defer></script>
+  </body>
+</html>
+

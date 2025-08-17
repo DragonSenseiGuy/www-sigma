@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Sigma Browser — Fast, Private, Modern</title>
+    <meta name="description" content="Sigma Browser is a fast, privacy-first, and modern web browser. Download for macOS (Apple Silicon and Intel)." />
+    <meta name="theme-color" content="#11162b" media="(prefers-color-scheme: dark)" />
+    <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)" />
+
+    <!-- Open Graph / Social -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Sigma Browser — Fast, Private, Modern" />
+    <meta property="og:description" content="Fast, privacy-first, and modern browsing. Download Sigma for macOS." />
+
+    <link rel="icon" href="./assets/logo.svg" type="image/svg+xml" />
+    <link rel="preload" href="./styles/main.css" as="style" />
+    <link rel="stylesheet" href="./styles/main.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header" role="banner">
+      <nav class="navbar container" aria-label="Main">
+        <a class="brand" href="./index.html" aria-label="Sigma Browser Home">
+          <img src="./assets/logo.svg" alt="Sigma Browser" width="32" height="32" />
+          <span>Sigma Browser</span>
+        </a>
+        <button class="nav-toggle" aria-controls="nav-menu" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+        <div id="nav-menu" class="nav-links">
+          <a class="nav-link active" href="./index.html">Home</a>
+          <a class="nav-link" href="./download.html">Download</a>
+          <button id="theme-toggle" class="nav-link theme-toggle" type="button" aria-pressed="false" title="Toggle light/dark theme">🌙</button>
+          <a class="nav-link" href="https://github.com" rel="noopener noreferrer" target="_blank">GitHub</a>
+        </div>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section class="hero">
+        <div class="container hero-inner">
+          <div class="hero-copy">
+            <h1>Meet Sigma Browser</h1>
+            <p>Fast, privacy-first, and thoughtfully designed for the modern web. Browse with confidence and delight.</p>
+            <div class="cta-row">
+              <a class="btn btn-primary" href="./download.html">Download for macOS</a>
+              <a class="btn btn-ghost" href="https://github.com" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+            </div>
+          </div>
+          <div class="hero-art">
+            <div class="browser-shape" aria-hidden="true">
+              <div class="browser-bar">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+              </div>
+              <div class="browser-body">
+                <div class="tab"></div>
+                <div class="tab"></div>
+                <div class="tab active"></div>
+                <div class="page"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="features">
+        <div class="container">
+          <h2 class="section-title">Why Sigma?</h2>
+          <div class="feature-grid">
+            <article class="feature-card">
+              <div class="icon speed" aria-hidden="true">⚡</div>
+              <h3>Blazing Fast</h3>
+              <p>Optimized for speed from the ground up so pages load instantly and interactions feel snappy.</p>
+            </article>
+            <article class="feature-card">
+              <div class="icon privacy" aria-hidden="true">🛡️</div>
+              <h3>Privacy First</h3>
+              <p>Thoughtful defaults and protective features help keep your data private while you browse.</p>
+            </article>
+            <article class="feature-card">
+              <div class="icon focus" aria-hidden="true">🎯</div>
+              <h3>Focused Design</h3>
+              <p>A clean, modern interface that gets out of your way and helps you stay productive.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="cta">
+        <div class="container cta-inner">
+          <h2>Ready to get started?</h2>
+          <p>Download Sigma for macOS and experience a better web.</p>
+          <a class="btn btn-primary" href="./download.html">Download Sigma</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>© <span id="year"></span> Sigma Browser. All rights reserved.</p>
+        <div class="footer-links">
+          <a href="./download.html">Download</a>
+          <span aria-hidden="true">•</span>
+          <a href="https://github.com" target="_blank" rel="noopener noreferrer">GitHub</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./scripts/main.js" defer></script>
+  </body>
+</html>
+

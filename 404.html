@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Page not found — Sigma Browser</title>
+    <meta name="robots" content="noindex" />
+    <meta name="description" content="The page you’re looking for can’t be found. Go back to the Sigma Browser homepage or download page.">
+    <meta name="theme-color" content="#11162b" media="(prefers-color-scheme: dark)" />
+    <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)" />
+
+    <link rel="icon" href="./assets/logo.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="./styles/main.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header" role="banner">
+      <nav class="navbar container" aria-label="Main">
+        <a class="brand" href="./index.html" aria-label="Sigma Browser Home">
+          <img src="./assets/logo.svg" alt="Sigma Browser" width="32" height="32" />
+          <span>Sigma Browser</span>
+        </a>
+        <button class="nav-toggle" aria-controls="nav-menu" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+        <div id="nav-menu" class="nav-links">
+          <a class="nav-link" href="./index.html">Home</a>
+          <a class="nav-link" href="./download.html">Download</a>
+          <button id="theme-toggle" class="nav-link theme-toggle" type="button" aria-pressed="false" title="Toggle light/dark theme">🌙</button>
+          <a class="nav-link" href="https://github.com" rel="noopener noreferrer" target="_blank">GitHub</a>
+        </div>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section class="hero">
+        <div class="container hero-inner">
+          <div class="hero-copy">
+            <h1>404 — Page not found</h1>
+            <p>Sorry, we couldn’t find that page. It might have been moved or renamed.</p>
+            <div class="cta-row">
+              <a class="btn btn-primary" href="./index.html">Back to Home</a>
+              <a class="btn btn-ghost" href="./download.html">Go to Download</a>
+            </div>
+          </div>
+          <div class="hero-art" aria-hidden="true">
+            <div class="browser-shape">
+              <div class="browser-bar">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+              </div>
+              <div class="browser-body">
+                <div class="tab"></div>
+                <div class="tab active"></div>
+                <div class="tab"></div>
+                <div class="page"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>© <span id="year"></span> Sigma Browser. All rights reserved.</p>
+        <div class="footer-links">
+          <a href="./download.html">Download</a>
+          <span aria-hidden="true">•</span>
+          <a href="https://github.com" target="_blank" rel="noopener noreferrer">GitHub</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./scripts/main.js" defer></script>
+  </body>
+</html>
+

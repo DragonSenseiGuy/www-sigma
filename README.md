@@ -1,6 +1,6 @@
 # Sigma Browser Website
 
-Static website for Sigma Browser, suitable for GitHub Pages hosting.
+Static website for Sigma Browser.
 
 ## Structure
 - index.html — Landing page
